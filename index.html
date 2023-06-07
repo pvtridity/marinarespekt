@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="head">
+        <div id="slider1">
+            <div class="elem"></div>
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+    </section>
+
+    <section class="sec1_top">
+       <div class="logo">
+            <img src="IMG/logo.svg" alt="">
+       </div>
+       <div class="menu">
+            <a id="btn_modal_window">Главная</a>
+            <a href="#sec2">Преимущества</a>
+            <a href="#sec3">Приложение</a>
+            <a href="#sec4">Акции</a>
+       </div>
+       <div class="menu-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+    </section>
+
+    <div class="burgir_menu">
+        <nav>
+        <ul>
+          <li class="burgir_nav"><a class="burgir_page1" href="#sec2">Преимущества</a></li>
+          <li class="burgir_nav"><a class="burgir_page2" href="#sec3">Приложение</a></li>
+          <li class="burgir_nav"><a class="burgir_page3" href="#sec4">Акции</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <section class="sec1">
+
+        <div id="my_modal" class="modal">
+            <div class="modal_content">
+              <span class="close_modal_window">×</span>
+              <p>Вы уже на главной!</p>
+            </div>
+          </div>
+
+        <div class="sec1txt">
+            <p>Марина <br> Супермаркет «Марина» - любимый многими круглосуточный гастроном. Удобное расположение и большой выбор продуктов, в том числе импортных, а также собственная выпечка вместе с кофе-машинкой делают дни наших покупателей ярче!</p>
+        </div>
+    </section>
+    
+    <section id="sec2" class="sec2">
+        <div class="advantages">
+            <p>Наши преимущества</p>
+            
+            <div class="tabs">
+
+                <ul class="tabss">
+                    <li onclick="hello('tab_one')">Наши продукты</li>
+                    <li onclick="hello('tab_two')">Наше приложение</li>
+                    <li onclick="hello('tab_three')">Мы</li>
+                  </ul>
+                  <div id="tab_one" class="tab">Обладая большим ассортиментом, включающим в себя собсвтенные продукты, импортные, и прочие необходимые для комфортной жизни в большом городе, мы являемся самым крутым супермаркетом на вашем районе как минимум.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis enim dicta minus expedita commodi cum sed dignissimos aperiam, cumque rerum sequi qui ad laudantium, consequatur laboriosam quo obcaecati magnam iusto!</div>
+                  <div id="tab_two" class="tab" style="display: none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sunt praesentium esse quasi est error quam nostrum maxime, sit quia, magnam numquam, temporibus illum debitis necessitatibus similique assumenda. Atque, praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti quod accusamus in assumenda dolores id vitae enim minima inventore, fugiat aspernatur incidunt iusto sunt deleniti, repudiandae quibusdam rerum minus!</div>
+                  <div id="tab_three" class="tab" style="display: none">Мы очень здоровский супермаркет, покупайте у нас продукты! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas explicabo omnis numquam repellendus mollitia accusamus rem, dicta obcaecati commodi voluptatem voluptatibus sunt similique laboriosam quis vel distinctio quia praesentium ducimus!</div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sec3" class="sec3">
+        <div class="accordeon">
+            <div class="acc_title">О приложении</div>
+            <div class="acc_content">
+
+                <div class="acc_left">
+                    <p>Установите приложение «Марина: акции и скидки» <br> Следите за актуальными преложениями, скидками и акциями, получайте бонусы, а также узнавайте о наших новинках и делайте онлайн-заказы в нашем приложении!</p>
+                </div>   
+
+                <div class="acc_right">
+                    <img src="IMG/phone.png" alt="">
+                </div>   
+
+            </div>
+          </div>
+    </section>
+
+    <section id="sec4" class="sec4">
+
+    <div class="sec4_title">
+        Специальные предложения, скидки, акции
+    </div>
+
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Показать все</button>
+        <button class="btn" onclick="filterSelection('offers')">Специальные предложения</button>
+        <button class="btn" onclick="filterSelection('sale')">Скидки</button>
+        <button class="btn" onclick="filterSelection('stock')">Акции</button>
+    </div>
+    
+
+    <div class="container">
+        <div class="filterDiv offers">Скидка 1800₽ на первые три заказа</div>
+        <div class="filterDiv sale">Кофе в одном чеке с выпечкой по скидке 15%</div>
+        <div class="filterDiv offers">Крепкие объятия 1 минута при покупке от 3000₽</div>
+        <div class="filterDiv sale">Освежающие напитки со скидками до 20%</div>
+        <div class="filterDiv stock">3 яблока, по цене 2, бог любит троицу</div>
+        <div class="filterDiv sale">Мороженое от двух штук по скидке 10%</div>
+        <div class="filterDiv offers">Скидки на заказы от 2500₽ заказы в приложении </div>
+        <div class="filterDiv stock">Каждой твари по паре бесплатно</div>
+        <div class="filterDiv sale">Бытовая химия в чеке от 3000₽ по скидке 15%</div>
+        <div class="filterDiv offers">Красивым ребятам кока-кола лайт в подарок</div>
+    </div>
+        
+    </section>
+
+    <section class="sec5">
+
+        <p>Будем рады помочь вам! <br> <br> +7 (666) 666 66 66 <br> marina.franchise@gmail.com <br> <br> Горячая линия с 9:00 до 22:00</p>
+
+        <p><img src="IMG/vk.png" alt=""><img src="IMG/tg.png" alt=""></p>
+
+    </section>
+
+    <script src="JS/slider.js"></script>
+    <script src="JS/modal.js"></script>
+    <script src="JS/tabs.js"></script>
+    <script src="JS/accordeon.js"></script>
+    <script src="JS/filter.js"></script>
+    <script src="JS/burgir.js"></script>
+
+</body>
+</html>

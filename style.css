@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&display=swap');
+
+p {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    margin: 0px;
+    background-color: #F1FFFA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.head{
+    width: 1440px;
+    height: 100px;
+    background-image: url("IMG/HEAD.png");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FF6F90;
+}
+
+.prev{
+    background-color: #FF6F90;
+    color: #F1FFFA;;
+    border-radius: 16px;
+    border: 0px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.next{
+    background-color: #FF6F90;
+    color: #F1FFFA;
+    border-radius: 16px;
+    border: 0px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.sec1_top{
+    width: 1440px;
+    height: 100px;
+    background-color: #7BB779;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.logo{
+    padding: 16px;
+    padding-left: 64px;
+}
+
+.menu{
+    padding-right: 64px;
+    color: #F1FFFA;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+.menu a{
+    padding-left: 16px;
+    color: #F1FFFA;
+    text-decoration: none;
+}
+
+.sec1{
+    width: 1440px;
+    height: 820px;
+    background-image: url("IMG/main back.png");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+}
+
+.sec1txt{
+    padding-right: 100px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #7BB779;
+    width: 500px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #F1FFFA;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    z-index: 99999;
+}
+
+.modal_content {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sec2{
+    width: 1440px;
+    height: 820px;
+    background-image: url("IMG/sec2.png");
+    background-size: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.advantages{
+    width: 1200px;
+    height: auto;
+    background-color: #7BB779;
+    border-radius: 32px;
+    margin: 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    color:#F1FFFA;
+    text-align: center;
+    font-size: 32px;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    text-align: center;
+  }
+  ul li {
+    display: inline-block;
+    border: 2px solid #F1FFFA;
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+  ul li:hover, li:active {
+    cursor: pointer;
+    color: #7BB779;
+    background-color: #F1FFFA;
+  }
+  .tab {
+    text-align: center;
+    padding: 2.5%;
+    background-color: #F1FFFA;
+    color: #7BB779;
+    max-width: 66%;
+    border-radius: 8px;
+  }
+
+  .sec3{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.accordeon{
+    padding: 32px;
+}
+
+.acc_title{
+    user-select: none;
+    border-bottom: 1px solid #7BB779;
+    cursor: pointer;
+    width: 1000px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    -ms-align-items: center;
+    align-items: center;
+    background-color: #7BB779;
+    color: #F1FFFA;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 32px;
+    border-radius: 8px;
+  }
+  
+  .acc_content{
+    background-color: #F1FFFA;
+    padding: 15px;
+    display: none;
+    border: 1px solid ;
+    color: #7BB779;
+    border-radius: 0px 0px 8px 8px;
+    width: 1000px;
+    justify-content: space-between;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+.open{
+    display: flex !important;
+}
+
+.acc_left{
+    width: 50%;
+}
+
+.acc_right{
+    width: 33%;
+}
+
+.sec4{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("IMG/sec4.png");
+    background-size: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+  
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filterDiv {
+    color: #ffffff;
+    width: 1000px;
+    border-radius: 16px;
+    border: 4px solid #FF6F90;
+    color: #FF6F90;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    margin: 8px;
+    line-height: 64px;
+    display: none; /* Скрыто по умолчанию */
+  }
+  
+  /* В класс "show" добавляется к отфильтрованные элементы */
+  .show {
+    display: block;
+  }
+  
+  /* Стиль кнопок */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    color: #FF6F90;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Добавить светло-серый фон на наведении курсора мыши */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Добавить темный фон для активной кнопки */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+.sec4_title{
+    color: #FF6F90;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.sec5{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #7BB779;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: 256px;
+    margin-right: auto;
+    align-items: center;
+}
+
+@media (max-width: 1440px) {
+    .head{
+        width: 100%;
+    }
+
+    .sec1_top{
+        width: 100%;
+    }
+
+    .sec1{
+        width: 100%;
+    }
+
+    .sec2{
+        width: 100%;
+    }
+
+    .advantages{
+        width: 75%;
+    }
+
+    
+    .sec3{
+        width: 100%;
+    }
+
+        
+    .sec4{
+        width: 100%;
+    }
+
+    .sec5{
+        margin-left: 32px;
+    }
+
+    .advantages{
+        font-size: 28px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .advantages {
+        font-size: 24px;
+    }
+
+    .sec3 {
+        width: 50%;
+    }
+
+    .accordeon{
+        padding: 0px;
+        padding-top: 16px;
+    }
+
+    .acc_title{
+        width: 666px;
+      }
+
+    .acc_content{
+        width: 666px;
+        font-size: 16px;
+    }
+    
+    .acc_left{
+        width: 33%;
+    }
+    
+    .acc_right{
+        width: 50%;
+    }
+
+    .filterDiv {
+        width: 750px;
+    }
+    .sec1{
+        background-image: url("IMG/mainbacknobag.png");
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+
+    .sec1txt {
+        padding-right: 0px;
+        align-items: center;
+        text-align: center;
+    }
+  }
+
+  
+  @media (max-width: 900px) {
+    .head{
+        height: 128px;
+    }
+
+    .advantages {
+        font-size: 20px;
+    }
+  }
+
+    
+  @media (max-width: 800px) {
+    .filterDiv {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .logo{
+        padding-left: 16px;
+    }
+
+    .acc_title{
+        width: 500px;
+      }
+
+    .acc_content{
+        width: 500px;
+        font-size: 14px;
+    }
+    
+    .acc_right img{
+        width: 100%;
+    }
+
+    .sec4_title{
+        font-size: 24px;
+    }
+
+    .menu{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+        padding-right: 16px;
+    }
+  }
+
+  .menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color:#F1FFFA;
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.burgir_menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background:#7BB779;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+}
+
+.burgir_nav{
+    background-color: #F1FFFA;
+}
+
+.burgir_nav a{
+    text-decoration: none;
+    color: #7BB779;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.burgir_menu.active {
+	transform: translateX(0);
+}
+
+.burgir_menu li {
+	list-style-type: none;
+}
+
+@media (max-width: 600px) {
+    .advantages {
+        font-size: 16px;
+        border-radius: 0px;
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .head{
+        font-size: 16px;
+    }
+
+    .acc_title {
+        width: 320px;
+    }
+
+    .acc_content{
+        width: 320px;
+    }
+
+    .filterDiv {
+        width: 320px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #myBtnContainer{
+        display: grid;
+    }
+
+    
+    #myBtnContainer button{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .btn {
+        margin: 8px;
+    }
+
+    .sec4_title {
+        text-align: center;
+    }
+
+    .sec1txt{
+        width: 320px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .acc_title {
+        width: 256px;
+    }
+
+    .acc_content {
+        width: 256px;
+    }
+
+    .acc_content img{
+        display: none;
+    }
+
+    .acc_left{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .filterDiv{
+        width: 280px;
+        line-height: 20px;
+    }
+
+    .head{
+        height: 150px;
+    }
+  }
+
+
